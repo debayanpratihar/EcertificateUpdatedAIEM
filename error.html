@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ecertificate/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ecertificate/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ecertificate/favicon-16x16.png">
+<link rel="manifest" href="/ecertificate/site.webmanifest">
+<link rel="mask-icon" href="/ecertificate/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <title>Error</title>
+    <style>
+        /* Make the video cover the entire viewport */
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Center the video and make it non-clickable */
+        #video-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        /* Style the error message */
+        #error-message {
+            position: absolute;
+            top: 90%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: rgb(11, 13, 56);
+            font-size: 45px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Video container -->
+    <div id="video-container">
+        <video autoplay loop muted>
+            <source src="error.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Error message -->
+    <div id="error-message">
+        This page does not exist..
+        Please go back!!!!
+    </div>
+</body>
+</html>
